@@ -33,6 +33,15 @@
     "stripInternal": true,
     "target": "es2018",
     "types": ["node"],
+    "paths": {
+      "@package": ["./package/*"]
+    },
     "typeRoots": ["./node_modules/@types", "./types"]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "docs",
+    "examples",
+    "./types/**/*"
+  ]
 }
