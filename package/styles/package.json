@@ -1,7 +1,6 @@
 {
-  "name": "@netuno-ui/web",
-  "version": "1.4.0",
-  "description": "",
+  "name": "@netuno-ui/styles",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -11,15 +10,14 @@
   },
   "keywords": [],
   "author": "Seaclax",
-  "license": "MIT",
+  "license": "ISC",
+  "dependencies": {
+    "@netuno-ui/web": "^1.4.0"
+  },
   "devDependencies": {
     "rollup": "^2.68.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.5.5"
-  },
-  "dependencies": {
-    "@netuno-ui/colors": "^1.1.0",
-    "@stitches/react": "^1.2.7"
   }
 }

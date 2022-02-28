@@ -5,6 +5,7 @@
       "*": ["./node_modules/*"],
       "@netuno-ui/colors": ["./package/colors/src"],
       "@netuno-ui/web": ["./package/web/src"],
+      "@netuno-ui/styles": ["./package/styles/src"],
     }
   }
 }
