@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "keywords": [],
+  "author": "Gabriel Melo",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.68.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@netuno-ui/colors": "^1.1.0",
+    "@stitches/react": "^1.2.7"
+  }
+}
