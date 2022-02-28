@@ -4,6 +4,7 @@
     "paths": {
       "*": ["./node_modules/*"],
       "@netuno-ui/colors": ["./package/colors/src"],
+      "@netuno-ui/web": ["./package/web/src"],
     }
   }
 }
