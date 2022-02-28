@@ -2,26 +2,16 @@ import { css, theme } from '@netuno-ui/web';
 
 const { colors } = theme;
 
-export const Button__Label = css({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-
-  '> * + *': {
-    marginLeft: '$3',
-  },
-});
-
-export const Button = css({
+export const Icon__Button = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   position: 'relative',
-  height: '$12',
+  padding: 0,
   backgroundColor: '$$backgroundColor',
   color: '$$color',
   border: '1px solid transparent',
-  borderRadius: '$xs',
+  borderRadius: '$sm',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$bold',
@@ -46,62 +36,50 @@ export const Button = css({
   variants: {
     size: {
       sm: {
+        width: '$8',
         height: '$8',
-        padding: '0 $4',
-        fontSize: '$xs',
       },
       md: {
+        width: '$10',
         height: '$10',
-        padding: '0 $6',
       },
       lg: {
+        width: '$12',
         height: '$12',
-        padding: '0 $8',
       },
     },
-
     variant: {
       solid: {
         $$backgroundColor: colors['seaclax-mid'],
         $$color: colors.white,
         $$hoverColor: colors['seaclax-light'],
-
       },
-
       soft: {
         $$backgroundColor: colors['shape-secondary'],
         $$color: colors['text-title'],
         $$hoverColor: colors['shape-tertiary'],
       },
-
       ghost: {
-        $$backgroundColor: colors['shape-secondary'],
-        $$color: colors['danger-light'],
-        $$hoverColor: colors['shape-tertiary'],
-      },
-
-      link: {
-        backgroundColor: 'transparent',
-        color: colors['seaclax-light'],
-        $$hoverColor: 'none',
+        $$backgroundColor: 'transparent',
+        $$color: colors['text-title'],
+        $$hoverColor: colors['shape-secondary'],
       },
     },
-
     outlined: {
       true: {
         background: 'none',
         borderColor: '$$backgroundColor',
-      }
+      },
     },
     full: {
       true: {
         display: 'block',
         width: '100%',
-      }
+      },
     },
     loading: {
       true: {
-        [Button__Label.selector]: {
+        '> *:first-child': {
           visibility: 'hidden',
         },
       },
@@ -114,7 +92,7 @@ export const Button = css({
   },
 });
 
-export const Button__Loading = css({
+export const IconButton__Loading = css({
   position: 'absolute',
   width: '100%',
   height: '100%',
