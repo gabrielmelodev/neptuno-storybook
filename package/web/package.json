@@ -1,8 +1,7 @@
 {
-  "name": "web",
-  "version": "1.0.0",
+  "name": "@netuno-ui/web",
+  "version": "1.2.0",
   "description": "",
-  "main": "index.js",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
