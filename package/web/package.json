@@ -1,6 +1,6 @@
 {
   "name": "@netuno-ui/web",
-  "version": "1.4.1",
+  "version": "1.4.3",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
