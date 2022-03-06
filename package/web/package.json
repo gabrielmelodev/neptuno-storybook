@@ -1,6 +1,6 @@
 {
-  "name": "@netuno-ui/web",
-  "version": "1.4.8",
+  "name": "@neptuno-ui/web",
+  "version": "0.1.6",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -19,8 +19,8 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@netuno-ui/colors": "^1.1.0",
-    "@netuno-ui/web": "^1.4.7",
+    "@neptuno-ui/colors": "^0.1.1",
+    "@stitches/core": "^1.2.7",
     "@stitches/react": "^1.2.7"
   }
 }
