@@ -1,6 +1,6 @@
 {
   "name": "@neptuno-ui/styles",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,9 @@
   "keywords": [],
   "author": "Gariel Melo <thegabrielmelo@gmail.com>",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@neptuno-ui/web": "^0.1.6"
+  },
   "devDependencies": {
     "rollup": "^2.68.0",
     "rollup-plugin-terser": "^7.0.2",
