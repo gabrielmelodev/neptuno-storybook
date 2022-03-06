@@ -1,6 +1,6 @@
 {
   "name": "@neptuno-ui/styles",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,8 @@
   "author": "Gariel Melo <thegabrielmelo@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@neptuno-ui/web": "^0.1.6"
+    "@neptuno-ui/web": "^0.1.6",
+    "@stitches/react": "^1.2.7"
   },
   "devDependencies": {
     "rollup": "^2.68.0",
