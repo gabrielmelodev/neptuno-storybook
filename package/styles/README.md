@@ -1,9 +1,9 @@
-# `@netuno-ui/styles`
+# `@neptuno-ui/styles`
 
 ## Installation
 
 ```sh
-$ yarn add @netuno-ui/styles
+$ yarn add @neptuno-ui/styles
 # or
-$ npm install @netuno-ui/styles
+$ npm install @neptuno-ui/styles
 ```

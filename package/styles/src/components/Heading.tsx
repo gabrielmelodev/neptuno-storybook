@@ -1,4 +1,4 @@
-import { css } from '@netuno-ui/web';
+import { css } from '@stitches/react';
 
 export const Heading = css({
   color: '$text-title',

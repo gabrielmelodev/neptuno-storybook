@@ -1,4 +1,4 @@
-import { css } from '@netuno-ui/web';
+import { css } from '@stitches/react';
 
 export const Card = css({
   backgroundColor: '$grey-950',
@@ -6,7 +6,7 @@ export const Card = css({
   borderRadius: '$sm',
 });
 
-export const Card__Wrapper = css({
+export const CardWrapper = css({
   display: 'flex',
   flexDirection: 'column',
 });

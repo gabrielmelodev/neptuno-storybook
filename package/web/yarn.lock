@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@netuno-ui/colors@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@netuno-ui/colors/-/colors-1.1.0.tgz#02d70833f82e69c6df63bac9b814ce7164ac6739"
-  integrity sha512-cNRUWtOy8wmn+7iCxHbdQ7UJL5BDRGCyAbdVcVJIKNbAi/QlMvdtz3auvf0pKVnAR5AZeLaL/Xk8QG+WgN/PeQ==
+"@neptuno-ui/colors@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@neptuno-ui/colors/-/colors-0.1.1.tgz#782ada0f7c48fa16f6019f2aa4652e3c3512428d"
+  integrity sha512-0zlHWCsB8poru9+4NTx23z9iT6nS02jmqfFRA0Z8b1JJapKRAIAsx2Iilk0laELOdE4bwjtz9Q8TlMQbDEcd8g==
 
 "@rollup/pluginutils@^4.1.2":
   version "4.1.2"
@@ -35,6 +35,11 @@
   dependencies:
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
+
+"@stitches/core@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-1.2.7.tgz#9d421b0635ee2acd65a8f0c078d5f5be8fc81766"
+  integrity sha512-2bSto+jqPjeODcdNvwuXduhUH5b1bROmGNSBj/EVOGk8a8dIdCnoZyXYSxdKlKA9SnedBg94qNO0QQAMvTAz3w==
 
 "@stitches/react@^1.2.7":
   version "1.2.7"

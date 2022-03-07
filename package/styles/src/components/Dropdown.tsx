@@ -1,4 +1,4 @@
-import { css } from '@netuno-ui/web';
+import { css } from '@stitches/react';
 
 export const Dropdown__Content = css({
   background: '$grey-800',
@@ -7,7 +7,7 @@ export const Dropdown__Content = css({
   overflow: 'hidden',
 });
 
-export const Dropdown__Item = css({
+export const DropdownItem = css({
   padding: '$3 $4',
   minWidth: 140,
 

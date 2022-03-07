@@ -1,9 +1,9 @@
-# `@netuno-ui/colors`
+# `@neptuno-ui/colors`
 
 ## Installation
 
 ```sh
-$ yarn add @netuno-ui/colors
+$ yarn add @neptuno-ui/colors
 # or
-$ npm install @netuno-ui/colors
+$ npm install @neptuno-ui/colors
 ```

@@ -1,12 +1,13 @@
-import { colors } from '@netuno-ui/colors';
-import { createStitches, defaultThemeMap } from "@stitches/react";
-import type * as Stitches from "@stitches/react";
-
+import { colors } from '@neptuno-ui/colors';
+import { createStitches, defaultThemeMap } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
 
 export const {
   styled,
   css,
   globalCss,
+  keyframes,
+  getCssText,
   theme,
   createTheme,
   config,
@@ -17,6 +18,7 @@ export const {
     height: 'space',
     opacity: 'opacity',
   },
+
   theme: {
     colors,
 
@@ -56,9 +58,9 @@ export const {
     },
 
     fonts: {
-      default: 'Barlow, sans-serif',
-      reading: 'Inter, serif',
+      default: 'Roboto, sans-serif',
       highlight: 'Roboto, sans-serif',
+      reading: 'Spectral, serif',
       code: 'Fira code, monospace',
     },
 
@@ -76,21 +78,17 @@ export const {
     },
 
     borderWidths: {
-      thin: '0.063rem',
-      medium: '0.094rem',
-      thick: '0.125rem',
-      heavy: '0.25rem',
+      thin: '1px',
+      medium: '1.5px',
+      thick: '2px',
+      heavy: '4px',
     },
 
     radii: {
-      default: '0rem',
-      base: '0.25rem',
-      xs: '0.156rem',
-      sm: '0.125rem',
-      md: '0.375rem',
-      lg: '0.5rem',
-      '2xl': '1rem',
-      '3xl': '1.5rem',
+      xs: '2.5px',
+      sm: '5px',
+      md: '10px',
+      lg: '20px',
       full: '99999px',
     },
 
@@ -131,4 +129,4 @@ export const {
       paddingBottom: value,
     }),
   },
-})
+});

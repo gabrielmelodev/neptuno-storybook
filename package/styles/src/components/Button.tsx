@@ -1,8 +1,9 @@
-import { css, theme } from '@netuno-ui/web';
+import { theme } from '@netuno-ui/web';
+import { css } from "@stitches/react";
 
 const { colors } = theme;
 
-export const Button__Label = css({
+export const ButtonLabel = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -59,22 +60,23 @@ export const Button = css({
         padding: '0 $8',
       },
     },
-
     variant: {
       solid: {
         $$backgroundColor: colors['seaclax-mid'],
         $$color: colors.white,
         $$hoverColor: colors['seaclax-light'],
-
       },
-
       soft: {
         $$backgroundColor: colors['shape-secondary'],
         $$color: colors['text-title'],
         $$hoverColor: colors['shape-tertiary'],
       },
-
       ghost: {
+        $$backgroundColor: 'transparent',
+        $$color: colors['text-title'],
+        $$hoverColor: colors['shape-secondary'],
+      },
+      danger: {
         $$backgroundColor: colors['shape-secondary'],
         $$color: colors['danger-light'],
         $$hoverColor: colors['shape-tertiary'],
@@ -86,27 +88,27 @@ export const Button = css({
         $$hoverColor: 'none',
       },
     },
-
     outlined: {
       true: {
         background: 'none',
         borderColor: '$$backgroundColor',
-      }
+      },
     },
     full: {
       true: {
         display: 'block',
         width: '100%',
-      }
+      },
     },
     loading: {
       true: {
-        [Button__Label.selector]: {
+        [ButtonLabel.selector]: {
           visibility: 'hidden',
         },
       },
     },
   },
+   
 
   defaultVariants: {
     variant: 'solid',
@@ -114,7 +116,7 @@ export const Button = css({
   },
 });
 
-export const Button__Loading = css({
+export const ButtonLoading = css({
   position: 'absolute',
   width: '100%',
   height: '100%',

@@ -11,13 +11,15 @@
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
   "dependencies": {
+    "@netuno-ui/web": "^1.4.7",
     "js-tokens": "^4.0.0",
     "loose-envify": "^1.4.0",
-    "scheduler": "^0.20.2",
-    "react-dom": "^17.0.2",
     "object-assign": "^4.1.1",
     "react": "^17.0.2",
-    "typescript": "^4.5.5" 
+    "react-dom": "^17.0.2",
+    "scheduler": "^0.20.2",
+    "tsdx": "^0.14.1",
+    "typescript": "^4.5.5"
   },
   "devDependencies": {},
   "scripts": {
@@ -34,7 +36,7 @@
     "access": "public"
   },
   "keywords": [],
-  "author": "Gabriel Melo <gabriel@seaclax.com>",
+  "author": "Gabriel Melo <thegabrielmelo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/seaclax/netuno/issues"

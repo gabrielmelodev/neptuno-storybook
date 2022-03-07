@@ -1,6 +1,6 @@
 {
-  "name": "@netuno-ui/colors",
-  "version": "1.4.0",
+  "name": "@neptuno-ui/colors",
+  "version": "0.1.1",
   "description": "Visual primitives such as typography, color, and spacing that are shared across platforms.",
   "main": "dist/index.js",
   "homepage": "https://github.com/seaclax/netuno",

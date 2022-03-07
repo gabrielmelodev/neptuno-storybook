@@ -1,17 +1,27 @@
-import { theme } from '@netuno-ui/web';
-import { css } from "@stitches/react";
+import { theme, css } from '@neptuno-ui/web';
+
 const { colors } = theme;
 
-export const IconButton = css({
+export const ButtonLabel = css({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  '> * + *': {
+    marginLeft: '$3',
+  },
+});
+
+export const Button = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   position: 'relative',
-  padding: 0,
+  height: '$12',
   backgroundColor: '$$backgroundColor',
   color: '$$color',
   border: '1px solid transparent',
-  borderRadius: '$sm',
+  borderRadius: '$xs',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$bold',
@@ -36,16 +46,17 @@ export const IconButton = css({
   variants: {
     size: {
       sm: {
-        width: '$8',
         height: '$8',
+        padding: '0 $4',
+        fontSize: '$xs',
       },
       md: {
-        width: '$10',
         height: '$10',
+        padding: '0 $6',
       },
       lg: {
-        width: '$12',
         height: '$12',
+        padding: '0 $8',
       },
     },
     variant: {
@@ -64,6 +75,17 @@ export const IconButton = css({
         $$color: colors['text-title'],
         $$hoverColor: colors['shape-secondary'],
       },
+      danger: {
+        $$backgroundColor: colors['shape-secondary'],
+        $$color: colors['danger-light'],
+        $$hoverColor: colors['shape-tertiary'],
+      },
+
+      link: {
+        backgroundColor: 'transparent',
+        color: colors['seaclax-light'],
+        $$hoverColor: 'none',
+      },
     },
     outlined: {
       true: {
@@ -79,12 +101,13 @@ export const IconButton = css({
     },
     loading: {
       true: {
-        '> *:first-child': {
+        [ButtonLabel.selector]: {
           visibility: 'hidden',
         },
       },
     },
   },
+   
 
   defaultVariants: {
     variant: 'solid',
@@ -92,7 +115,7 @@ export const IconButton = css({
   },
 });
 
-export const IconButtonLoading = css({
+export const ButtonLoading = css({
   position: 'absolute',
   width: '100%',
   height: '100%',
