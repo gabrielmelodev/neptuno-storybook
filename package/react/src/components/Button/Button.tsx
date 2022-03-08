@@ -1,6 +1,8 @@
-import { Button as ButtonCSS,  ButtonLabel as ButtonLabelCSS, ButtonLoading as ButtonLoadingCSS} from './Styles';
+import { Button as ButtonCSS, ButtonLabel as ButtonLabelCSS, 
+  ButtonLoading as ButtonLoadingCSS } from '@neptuno-ui/styles';
 import { styled } from "@stitches/react";
 import React, { forwardRef } from "react";
+import type * as Stitches from '@stitches/react';
 import { Spinner } from '../spinner/Spinner';
 
 
@@ -9,9 +11,10 @@ const ButtonLabel = styled('span', ButtonLabelCSS);
 const ButtonLoading = styled('span', ButtonLoadingCSS);
 
 export type ButtonProps = React.ComponentProps<typeof StyledButton> & {
-  leftIcon?: React.ReactElement;
-  rightIcon?: React.ReactElement;
-  loading?: boolean;
+    leftIcon?: React.ReactElement;
+    rightIcon?: React.ReactElement;
+    loading?: boolean; 
+    css?: Stitches.CSS;
 }
 
 export const Button = forwardRef<
@@ -19,15 +22,15 @@ export const Button = forwardRef<
   ButtonProps
 >(
   (
-    { children, leftIcon, rightIcon, loading, disabled, ...props },
+    { children, leftIcon, rightIcon, css, loading, disabled, ...props },
     forwardRef
   ) => {
     return (
-      <StyledButton 
-      ref={forwardRef} 
-      disabled={disabled} 
-      loading={loading} 
-      {...props}>
+      <StyledButton
+        ref={forwardRef}
+        disabled={disabled}
+        loading={loading}
+        {...props}>
         <ButtonLabel>
           {leftIcon}
           <span>{children}</span>

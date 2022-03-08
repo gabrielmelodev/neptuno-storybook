@@ -40,7 +40,7 @@ export default {
     rightIcon: iconArgType,
   },
   args: {
-    childen: 'LABEL',
+    children: 'LABEL',
     variant: 'solid',
     size: 'md',
     disabled: false,
@@ -50,7 +50,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button  {...args}/>;
 
 export const Solid = Template.bind({});
 

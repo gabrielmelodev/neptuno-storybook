@@ -18,10 +18,11 @@ export const Button = css({
   justifyContent: 'center',
   position: 'relative',
   height: '$12',
+  padding: '0 $8',
   backgroundColor: '$$backgroundColor',
   color: '$$color',
   border: '1px solid transparent',
-  borderRadius: '$xs',
+  borderRadius: '$sm',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$bold',
@@ -40,7 +41,7 @@ export const Button = css({
   '&:focus-visible': {
     outline: 0,
     boxShadow:
-      '0 0 0 4px $colors$color-background, 0 0 0 6px rgba(255, 255, 255, 0.4)',
+      '0 0 0 4px $colors$color-background, 0 0 0 6px rgba(255, 255, 255, 0.7)',
   },
 
   variants: {
@@ -80,7 +81,6 @@ export const Button = css({
         $$color: colors['danger-light'],
         $$hoverColor: colors['shape-tertiary'],
       },
-
       link: {
         backgroundColor: 'transparent',
         color: colors['seaclax-light'],
@@ -107,7 +107,6 @@ export const Button = css({
       },
     },
   },
-   
 
   defaultVariants: {
     variant: 'solid',

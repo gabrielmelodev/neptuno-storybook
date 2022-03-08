@@ -21,7 +21,8 @@
     "noEmit": true,
     "baseUrl": "./",
     "paths": {
-      "@emotion/core": ["./types.d.ts"]
+      "@emotion/core": ["./@types/types.d.ts"],
+      "@storybook/themming": ["./@types/types.d.ts"]
     }
   }
 }
