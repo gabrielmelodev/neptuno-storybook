@@ -1,24 +1,14 @@
-import { theme, css } from '@neptuno-ui/web';
+import { theme } from '@neptuno-ui/web';
+import { css } from '@stitches/react';
 
 const { colors } = theme;
 
-export const ButtonLabel = css({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-
-  '> * + *': {
-    marginLeft: '$3',
-  },
-});
-
-export const Button = css({
+export const IconButton = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   position: 'relative',
-  height: '$12',
-  padding: '0 $8',
+  padding: 0,
   backgroundColor: '$$backgroundColor',
   color: '$$color',
   border: '1px solid transparent',
@@ -47,17 +37,16 @@ export const Button = css({
   variants: {
     size: {
       sm: {
-        height: '$8',
-        padding: '0 $4',
-        fontSize: '$xs',
+        width: '2rem',
+        height: '2rem',
       },
       md: {
-        height: '$10',
-        padding: '0 $6',
+        width: '2.5rem',
+        height: '2.5rem',
       },
       lg: {
-        height: '$12',
-        padding: '0 $8',
+        width: '3rem',
+        height: '3rem',
       },
     },
     variant: {
@@ -76,16 +65,6 @@ export const Button = css({
         $$color: colors['text-title'],
         $$hoverColor: colors['shape-secondary'],
       },
-      danger: {
-        $$backgroundColor: colors['shape-secondary'],
-        $$color: colors['danger-light'],
-        $$hoverColor: colors['shape-tertiary'],
-      },
-      link: {
-        backgroundColor: 'transparent',
-        color: colors['seaclax-light'],
-        $$hoverColor: 'none',
-      },
     },
     outlined: {
       true: {
@@ -101,7 +80,7 @@ export const Button = css({
     },
     loading: {
       true: {
-        [ButtonLabel.selector]: {
+        '> *:first-child': {
           visibility: 'hidden',
         },
       },
@@ -114,7 +93,7 @@ export const Button = css({
   },
 });
 
-export const ButtonLoading = css({
+export const IconButtonLoading = css({
   position: 'absolute',
   width: '100%',
   height: '100%',
