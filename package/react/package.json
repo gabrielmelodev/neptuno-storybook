@@ -1,6 +1,6 @@
 {
   "name": "@neptuno-ui/react",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -15,6 +15,14 @@
   "keywords": [],
   "author": "Gabriel Melo - <thegabrielmelo@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seaclax/neptuno.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@emotion/core": "^11.0.0",
@@ -43,7 +51,10 @@
   "dependencies": {
     "@neptuno-ui/styles": "^0.1.10",
     "@neptuno-ui/web": "^0.1.13",
+    "@radix-ui/react-accordion": "^0.1.6",
+    "@radix-ui/react-checkbox": "^0.1.5",
     "@radix-ui/react-dropdown-menu": "^0.1.6",
+    "@radix-ui/react-icons": "^1.1.0",
     "@stitches/react": "^1.2.7",
     "@storybook/client-api": "^6.4.19",
     "@types/storybook__react": "^5.2.1",
