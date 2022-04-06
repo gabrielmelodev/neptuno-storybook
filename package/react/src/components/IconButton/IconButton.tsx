@@ -5,7 +5,7 @@ import {
 
 import { styled } from "@stitches/react"
 import React, { forwardRef } from "react"
-import { Spinner } from '../spinner/Spinner';
+import { Spinner } from '../Spinner/Spinner';
 
 const StyledIconButton = styled('button', IconButtonCSS);
 const IconButtonLoading = styled('span', IconButtonLoadingCSS)

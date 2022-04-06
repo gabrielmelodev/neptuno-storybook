@@ -3,6 +3,7 @@
   "compilerOptions": {
     "paths": {
       "*": ["./node_modules/*"],
+      "@neptuno/core": ["./package/react/src"],
       "@netuno-ui/colors": ["./package/colors/src"],
       "@netuno-ui/web": ["./package/web/src"],
       "@netuno-ui/styles": ["./package/styles/src"],

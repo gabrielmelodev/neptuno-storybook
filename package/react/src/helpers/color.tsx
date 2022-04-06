@@ -1,4 +1,4 @@
-import { theme } from '@netuno-ui/web';
+import { theme } from '@neptuno-ui/web';
 
 export type ThemeColor =
   | `$${keyof typeof theme.colors}`

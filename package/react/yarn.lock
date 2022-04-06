@@ -2111,14 +2111,6 @@
   resolved "https://registry.npmjs.org/@neptuno-ui/colors/-/colors-0.1.1.tgz"
   integrity sha512-0zlHWCsB8poru9+4NTx23z9iT6nS02jmqfFRA0Z8b1JJapKRAIAsx2Iilk0laELOdE4bwjtz9Q8TlMQbDEcd8g==
 
-"@neptuno-ui/styles@^0.1.10":
-  version "0.1.10"
-  resolved "https://registry.npmjs.org/@neptuno-ui/styles/-/styles-0.1.10.tgz"
-  integrity sha512-zirlHb7eTCVVDvuDO7vQDiDv9jVbXNbQLXTkFyx4M3ngKMBMyO1nSet5tNupOrbIVlrpoOJ8HFzOCuPbLg/gUQ==
-  dependencies:
-    "@neptuno-ui/web" "^0.1.9"
-    "@stitches/react" "^1.2.7"
-
 "@neptuno-ui/web@^0.1.13":
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/@neptuno-ui/web/-/web-0.1.13.tgz#e7d2f5d84be90105fb9c3e22f3f4465dd83b61f8"
@@ -2127,15 +2119,6 @@
     "@neptuno-ui/colors" "^0.1.1"
     "@stitches/core" "^1.2.7"
     "@stitches/react" "1.1.0"
-
-"@neptuno-ui/web@^0.1.9":
-  version "0.1.11"
-  resolved "https://registry.npmjs.org/@neptuno-ui/web/-/web-0.1.11.tgz"
-  integrity sha512-XDFONmhykcEXD/qv3fWQV2DjNpFiP46XwWAgLZCkGl5ZpW1S1mQPNSacsZz1A47tjQ8WPLu0swRm9XqWrMMgsQ==
-  dependencies:
-    "@neptuno-ui/colors" "^0.1.1"
-    "@stitches/core" "^1.2.7"
-    "@stitches/react" "^1.2.7"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2698,7 +2681,7 @@
 
 "@stitches/react@^1.2.7":
   version "1.2.7"
-  resolved "https://registry.npmjs.org/@stitches/react/-/react-1.2.7.tgz"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.7.tgz#aea2403fac726db66d1740d29557e3910b1a1dc7"
   integrity sha512-6AxpUag7OW55ANzRnuy7R15FEyQeZ66fytVo3BBilFIU0mfo3t49CAMcEAL/A1SbhSj/FCdWkn/XrbjGBTJTzg==
 
 "@storybook/addon-a11y@^6.4.19":
@@ -10562,7 +10545,7 @@ react-helmet-async@^1.0.7:
 
 react-icons@^4.3.1:
   version "4.3.1"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.3.1.tgz"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
   integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
 
 react-inspector@^5.1.0:

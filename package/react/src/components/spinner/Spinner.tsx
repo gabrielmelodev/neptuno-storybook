@@ -1,4 +1,4 @@
-import { Spinner as SpinnerCSS } from '@neptuno-ui/styles';
+import { Spinner as SpinnerCSS } from './spinner-styles';
 import { styled } from '@stitches/react';
 import React, { forwardRef } from "react";
 import { getThemeColor, ThemeColor } from '../../helpers/color';
