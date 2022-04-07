@@ -6,14 +6,11 @@ import {
 import { styled } from "@stitches/react"
 import React, { forwardRef } from "react"
 import { Spinner } from '../Spinner/Spinner';
+import { IconButtonProps } from '../types';
 
-const StyledIconButton = styled('button', IconButtonCSS);
-const IconButtonLoading = styled('span', IconButtonLoadingCSS)
+export const StyledIconButton = styled('button', IconButtonCSS);
+export const IconButtonLoading = styled('span', IconButtonLoadingCSS)
 
-export type IconButtonProps = React.ComponentProps<typeof StyledIconButton> & {
-  icon: React.ReactElement;
-  loading?: boolean;
-}
 
 export const IconButton = forwardRef<
   React.ElementRef<typeof StyledIconButton>,

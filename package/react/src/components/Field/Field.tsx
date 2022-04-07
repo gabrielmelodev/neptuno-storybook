@@ -5,17 +5,13 @@ import {
 } from './field-styles';
 import { styled } from '@stitches/react';
 import React, { forwardRef } from 'react';
+import { TextFieldProps } from '../types';
 
-const StyledContainer = styled('div', ContainerCSS);
-const StyledField = styled('input', TextFieldCSS);
-const StyledIcon = styled('div', IconCSS);
+export const StyledContainer = styled('div', ContainerCSS);
+export const StyledField = styled('input', TextFieldCSS);
+export const StyledIcon = styled('div', IconCSS);
 
-export type TextFieldProps = React.ComponentProps<typeof StyledField> & {
-  leftIcon?: React.ReactElement;
-  rightIcon?: React.ReactElement;
-  disabled?: boolean;
-  error?: boolean;
-}
+
 
 
 export const TextField = forwardRef<

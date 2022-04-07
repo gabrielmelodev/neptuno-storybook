@@ -8,3 +8,4 @@ export * from './components/IconButton/IconButton';
 export * from './components/Card/Card';
 export * from './components/Box/Box';
 export * from './components/Checkbox/Checkbox';
+export * from './components/Switch/Switch';
