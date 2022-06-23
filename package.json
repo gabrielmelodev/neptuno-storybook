@@ -1,45 +1,76 @@
 {
-  "private": false,
-  "name": "@netuno-ui/system",
-  "version": "1.0.0",
-  "description": "",
-  "files": [
-    "dist"
-  ],
+  "name": "@neptuno-ui/core",
+  "version": "0.1.5",
+  "description": "Quickly build React apps. a library of fast, beautiful and affordable simple and personal components.",
   "main": "dist/index.js",
-  "module": "dist/system.esm.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "typings": "dist/index.d.ts",
-  "dependencies": {
-    "@netuno-ui/web": "^1.4.7",
-    "js-tokens": "^4.0.0",
-    "loose-envify": "^1.4.0",
-    "object-assign": "^4.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "scheduler": "^0.20.2",
-    "tsdx": "^0.14.1",
-    "typescript": "^4.5.5"
-  },
-  "devDependencies": {},
   "scripts": {
-    "build": "tsdx build --tsconfig tsconfig.build.json",
-    "test": "jest --passWithNoTests",
-    "prepublish": "npm run build"
+    "build": "rollup -c",
+    "start": "yarn run storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
+  "keywords": [],
+  "author": "Gabriel Melo - <thegabrielmelo@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seaclax/netuno.git"
+    "url": "git+https://github.com/seaclax/neptuno.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "keywords": [],
-  "author": "Gabriel Melo <thegabrielmelo@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/seaclax/netuno/issues"
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.8.1",
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.3.8",
+    "@storybook/storybook-deployer": "^2.8.10",
+    "@storybook/testing-library": "^0.0.9",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-system": "^5.1.15",
+    "@types/styled-system__css": "^5.0.16",
+    "babel-loader": "^8.2.3",
+    "lerna": "^4.0.0",
+    "polished": "^4.1.4",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-is": "^17.0.2",
+    "rollup": "^2.68.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.5.5"
   },
-  "homepage": "https://github.com/seaclax/netuno#readme"
+  "dependencies": {
+    "@neptuno-ui/colors": "^0.1.1",
+    "@neptuno-ui/web": "^0.1.13",
+    "@radix-ui/react-accordion": "^0.1.6",
+    "@radix-ui/react-checkbox": "^0.1.5",
+    "@radix-ui/react-dialog": "^0.1.7",
+    "@radix-ui/react-dropdown-menu": "^0.1.6",
+    "@radix-ui/react-icons": "^1.1.0",
+    "@radix-ui/react-portal": "^0.1.4",
+    "@radix-ui/react-slider": "^0.1.4",
+    "@radix-ui/react-slot": "^0.1.2",
+    "@radix-ui/react-switch": "^0.1.5",
+    "@radix-ui/react-tabs": "^0.1.5",
+    "@radix-ui/react-toast": "^0.1.1",
+    "@stitches/react": "^1.2.8",
+    "@storybook/client-api": "^6.4.19",
+    "@styled-system/css": "^5.1.5",
+    "@types/storybook__react": "^5.2.1",
+    "@types/styled-components": "^5.1.25",
+    "axios": "^0.26.1",
+    "react": "^17.0.2",
+    "styled-components": "^5.3.5"
+  }
 }
