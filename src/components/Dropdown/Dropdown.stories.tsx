@@ -7,7 +7,6 @@ import {
   DropdownTrigger,
   DropdownItem,
   DropdownContent,
-  
   DropdownItemText
 } from './Dropdown';
 

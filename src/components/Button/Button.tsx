@@ -5,21 +5,14 @@ import {
 } from './button-styles';
 import { styled } from "@stitches/react";
 import React, { forwardRef } from "react";
-import type * as Stitches from '@stitches/react';
-
 import { Spinner } from '../spinner/Spinner';
+import { ButtonProps } from '../types';
 
 
-const StyledButton = styled('button', ButtonCSS);
-const ButtonLabel = styled('span', ButtonLabelCSS);
-const ButtonLoading = styled('span', ButtonLoadingCSS);
+export const StyledButton = styled('button', ButtonCSS);
+export const ButtonLabel = styled('span', ButtonLabelCSS);
+export const ButtonLoading = styled('span', ButtonLoadingCSS);
 
-export type ButtonProps = React.ComponentProps<typeof StyledButton> & {
-  leftIcon?: React.ReactElement;
-  rightIcon?: React.ReactElement;
-  loading?: boolean;
-  css?: Stitches.CSS;
-}
 
 export const Button = forwardRef<
   React.ElementRef<typeof StyledButton>,

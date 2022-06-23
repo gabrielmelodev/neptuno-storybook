@@ -67,7 +67,7 @@ export const Field = css({
   appearance: 'none',
   outline: 0,
   width: '100%',
-  height: '3rem',
+  height: 45,
   padding: '0 $4',
   fontFamily: '$default',
   fontSize: '$md',

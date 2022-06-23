@@ -1,6 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { Text as TextLabel, TextProps, } from './Text'
+import { TextProps } from '../types';
+import { Text as TextLabel } from './Text'
 
 export default {
   title: 'Typography/Text',

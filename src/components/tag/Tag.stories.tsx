@@ -1,6 +1,7 @@
 import {Meta, Story } from '@storybook/react';
 import React from 'react';
-import { Tag, TagProps} from './Tag';
+import { TagProps } from '../types';
+import { Tag } from './Tag';
 
 export default {
   title: 'Form/Tag',

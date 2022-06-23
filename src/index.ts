@@ -8,3 +8,7 @@ export * from './components/IconButton/IconButton';
 export * from './components/Card/Card';
 export * from './components/Box/Box';
 export * from './components/Checkbox/Checkbox';
+export * from './components/Switch/Switch'
+export * from './components/slider/Slider';
+export * from './components/Heading/Heading';
+export * from './components/Portal';

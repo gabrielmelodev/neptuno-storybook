@@ -1,13 +1,10 @@
 import { Tag as TagCSS, TagDeleteButton as TagDeleteButtonCSS } from './tag-styles';
 import { styled } from '@stitches/react';
 import React, { forwardRef } from 'react';
+import { TagProps } from '../types';
 
-const  StyledTag = styled('span', TagCSS);
-const  TagDeleteButton = styled('span', TagDeleteButtonCSS);
-
-export type TagProps = React.ComponentProps<typeof StyledTag> & {
-  onDelete?: () => void;
-}
+export const  StyledTag = styled('span', TagCSS);
+export const  TagDeleteButton = styled('span', TagDeleteButtonCSS);
 
 export const Tag = forwardRef<React.ElementRef<typeof StyledTag>, TagProps>(
   ({ children, onDelete, variant, ...props}, forwardeRef) => {

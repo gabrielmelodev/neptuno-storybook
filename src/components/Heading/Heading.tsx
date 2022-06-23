@@ -1,12 +1,9 @@
 import { Heading as HeadingCSS } from './Heading-styles';
 import { styled } from "@stitches/react";
 import React,{ forwardRef } from "react";
+import { HeadingProps } from '../types';
 
-const StyledHeading = styled('h2', HeadingCSS);
-
-export type HeadingProps = React.ComponentProps<typeof StyledHeading> & {
-  as?: React.ElementType;
-};
+export const StyledHeading = styled('h2', HeadingCSS);
 
 export const Heading = forwardRef<
   React.ElementRef<typeof StyledHeading>,

@@ -1,7 +1,8 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { Button, ButtonProps } from "./Button";
+import { Button, } from "./Button";
 import { IoEyeOff, IoLockClosed, IoPerson, } from 'react-icons/io5';
+import { ButtonProps } from '../types';
 
 const iconArgType = {
   options: ['noIcon', 'IoPerson', 'IoLockClosed', 'IoEyeOff'],

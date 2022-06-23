@@ -1,16 +1,10 @@
 import { Avatar as AvatarCSS } from "./avatar-styles";
 import { styled } from "@stitches/react"
 import React, { forwardRef } from "react"
-import { ThemeColor, getThemeColor } from "../../helpers/color";
+import { getThemeColor } from "../../helpers/color";
+import { AvatarProps } from "../types";
 
-const StyledAvatar = styled('span', AvatarCSS);
-
-export type AvatarProps = React.ComponentProps<typeof StyledAvatar> & {
-  src: string;
-  name: string;
-  label?: string;
-  borderColor?: ThemeColor;
-};
+export const StyledAvatar = styled('span', AvatarCSS);
 
 export const Avatar = forwardRef<
   React.ElementRef<typeof StyledAvatar>,
