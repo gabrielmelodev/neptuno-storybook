@@ -1,3 +1,4 @@
+import { colors } from '@neptuno-ui/colors';
 import { css } from '@stitches/react';
 
 export const Avatar = css({
@@ -20,8 +21,8 @@ export const Avatar = css({
   variants: {
     size: {
       sm: {
-        width: '$8',
-        height: '$8',
+        width: '2rem',
+        height: '2rem',
         padding: '2px',
         span: {
           display: 'none',
@@ -54,4 +55,24 @@ export const Avatar = css({
           size: 'md',
         },
 
+});
+
+export const StyledFallback = css({
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundColor: colors['grey-700'],
+  color: colors['seaclax-dark'],
+  fontSize: 15,
+  lineHeight: 1,
+  fontWeight: 500,
+});
+
+
+export const StyledImagem = css({
+  width: '100%',
+  objectFit: 'cover',
+  borderRadius: '$full',
 });

@@ -1,8 +1,8 @@
+import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { theme } from "@neptuno-ui/web";
-import React from 'react';
-
-import { Avatar as AvatarComponents, AvatarProps } from './Avatar';
+import { Avatar as AvatarComponents } from './Avatar';
+import { AvatarProps } from '../types';
 
 const colors = Object.entries(theme.colors)
        .filter(([, value]) => !value.value.startsWith('$'))
@@ -18,6 +18,9 @@ export default {
       options: ['sm','md','lg','xl'],
       control: { type: 'inline-radio'},
     },
+    onLoadingStatusChange: {
+      options: ['idle', 'loading', 'loaded',  'error'],
+    },
     borderColor: {
       options: colors,
       control: { type: 'select'},
@@ -26,6 +29,7 @@ export default {
   args: {
     src: 'https://ui-avatars.com/api/?name=Gabriel+Melo&background=0466C8&color=fff',
     size: 'md',
+    delayMs: '600',
     label: '',
   }
 } as Meta;

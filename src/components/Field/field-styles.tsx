@@ -93,5 +93,27 @@ export const Field = css({
       },
     },
   },
+});
+
+export const TextareaField = css({
+  boxSizing: 'border-box',
+  appearance: 'none',
+  outline: 0,
+  width: '100%',
+  height: '3rem',
+  padding: '8px',
+  fontFamily: '$default',
+  fontSize: '$md',
+  color: '$text-title',
+  backgroundColor: '$grey-900',
+  border: '2px solid transparent',
+  borderRadius: '$sm',
+  transition: 'border-color 0.2s',
+
+  '&::placeholder': {
+    color: '$placeholder',
+  },
+
 })
+
 
